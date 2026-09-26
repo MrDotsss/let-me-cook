@@ -23,6 +23,8 @@
   },
   "type": "module",
   "dependencies": {
+    "@better-auth/mongo-adapter": "^1.7.5",
+    "@google/genai": "^2.24.0",
     "better-auth": "^1.7.5",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.6",

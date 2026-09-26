@@ -5,6 +5,7 @@ import cors from "cors";
 import { corsOptions } from "./config/cors.config.js";
 import { toNodeHandler } from "better-auth/node";
 import { auth } from "./lib/auth.js";
+import recipeRoutes from "./features/recipe/recipe.routes.js";
 
 const app: Express = express();
 
@@ -19,5 +20,7 @@ app.use(express.json());
 app.get("/api", (req, res) => {
   res.status(200).json({ message: "Let Me Cook API Server" });
 });
+
+app.use(recipeRoutes);
 
 export default app;

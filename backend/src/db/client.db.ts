@@ -11,6 +11,7 @@ const checkDbConnection = async () => {
     console.log("✅ Successfully connected to the database.");
   } catch (error) {
     console.error("❌ Could not connect to the database:", error);
+    process.exit(1);
   }
 };
 
